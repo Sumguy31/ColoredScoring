@@ -82,6 +82,6 @@ A better path could be attained by evaluating more paths before making a decisio
 
 The best way to find the optimal path would be through a technique called Machine Learning or Evolutionary Computing, a technique I have never used nor really deeply looked into. For worse or for better, Python and R (the choice programming language of many data scientist and machine learning enthusiast) are two of my weakest languages.
 
-For more information on Machine Learning as it relates to the Traveling Salesman Problem, I’d refer you to the TSP wikipedia page I listed above. Look for the section on Ant Colony Simulation. Marco Dorigo’s work is actually quite fascinating.
+For more information on Machine Learning as it relates to the Traveling Salesman Problem, I’d refer you to the TSP wikipedia page. Look for the section on Ant Colony Simulation. Marco Dorigo’s work is actually quite fascinating.
 
 I’m still working on this part, and if this gets enough I attention I may either make another post or just make a comment on this one.
