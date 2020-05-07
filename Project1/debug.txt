@@ -1,0 +1,27 @@
+starting rows
+ ---------------------------- 
+ 
+OrangePurpleBlue
+total distance: 118.678
+ ---------------------------- 
+ 
+OrangeBluePurple
+total distance: 121.939
+ ---------------------------- 
+ 
+PurpleOrangeBlue
+total distance: 126.777
+ ---------------------------- 
+ 
+PurpleBlueOrange
+total distance: 128.489
+ ---------------------------- 
+ 
+BlueOrangePurple
+total distance: 123.09
+ ---------------------------- 
+ 
+BluePurpleOrange
+total distance: 121.541
+ ---------------------------- 
+ 

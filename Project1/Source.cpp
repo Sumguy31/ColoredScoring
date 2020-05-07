@@ -381,27 +381,38 @@ int main() {
 
 	createZoneCSV();
 	createRiserCSV();
-	
-	//std::ofstream fRows("rowZone.csv");
-	//cout << "Starting Rows";
-	//cout << "\n ---------------------------- \n \n";
-	//for (int i = 0; i < 6; i++) {
-	//	
-	//	for (int j = 0; j < 3; j++) {
-	//		rowColors(j+1, colorArray[i][j]);
-	//	}
-	//	assignZone();
-	//	for (int j = 0; j < 27; j++) {
-	//		fRows << riserArray[j].zoneAssignment;
-	//		fRows << ',';
-	//	}
-	//	fRows << "\n";
-
-	//	cout << "Total Distance: ";
-	//	cout << getTotalDist();
-	//	cout << "\n ---------------------------- \n \n";
-	//}
-	//fRows.close();
+	std::ofstream debug("debug.txt");
+	std::ofstream frows("rowzone.csv");
+	debug << "starting rows";
+	debug << "\n ---------------------------- \n \n";
+	for (int i = 0; i < 6; i++) {
+		
+		for (int j = 0; j < 3; j++) {
+			rowColors(j+1, colorArray[i][j]);
+		}
+		assignZone();
+		for (int j = 0; j < 27; j++) {
+			frows << riserArray[j].zoneAssignment;
+			frows << ',';
+		}
+		frows << "\n";
+		for (int j = 0; j < 3; j++) {
+			if (colorArray[i][j] == 0) {
+				debug << "Orange";
+			}
+			else if (colorArray[i][j] == 1) {
+				debug << "Purple";
+			}
+			else {
+				debug << "Blue";
+			}
+		}
+		debug << "\n";
+		debug << "total distance: ";
+		debug << getTotalDist();
+		debug << "\n ---------------------------- \n \n";
+	}
+	frows.close();
 
 	//std::ofstream fCols("colZone.csv");
 	//cout << "Starting Columns";
