@@ -217,6 +217,8 @@ def fullPath(startCoord):
         totalDistance += path.distance
     print(f'Total Distance: {totalDistance}')
     return pathList
+
+
 #driver code
 print("Zone Coordinates")
 for zone in zoneList:
@@ -230,6 +232,9 @@ for riser in riserList:
 print("")
 print("begining pathing")
 
-fullPath(coordinate(36,66))
-# print(f'risers stacked: {countStacked()}')
+FPath = fullPath(coordinate(36,66))
 
+with open('path.csv', 'w', newline='') as csvfile:
+    pathwriter = csv.writer(csvfile, delimiter=',')
+    for element in FPath:
+        pathwriter.writerow(element.vector)
