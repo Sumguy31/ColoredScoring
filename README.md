@@ -84,4 +84,4 @@ The best way to find the optimal path would be through a technique called Machin
 
 For more information on Machine Learning as it relates to the Traveling Salesman Problem, I’d refer you to the TSP wikipedia page. Look for the section on Ant Colony Simulation. Marco Dorigo’s work is actually quite fascinating.
 
-I’m still working on this part, and if this gets enough I attention I may either make another post or just make a comment on this one.
+This solution is still being developed, for my knowledge in ML at this point is very little, but if you have any questions feel free to reach out to me and I will do my best to answer.
