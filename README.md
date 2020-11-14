@@ -48,6 +48,7 @@ b) you only have to move the risers to the zone, and do not have to travel to th
 It is assumption b that is the real killer to this solution, once you start considering distance to get to an object you enter a point where the computation of the shortest path takes many more computations to find. This is what is meant by np-hard, as more points are added it becomes increasingly unrealistic to test every possible path. Which brings us to our next solution:
 
 ## Solution 2 - Nearest Neighbor: Blue, Orange, Purple
+![scoringimage](https://raw.githubusercontent.com/Sumguy31/ColoredScoring/master/visualization/NN-Path.gif)
 
 At this point I did two things:
 a) I switched to Python
@@ -61,11 +62,11 @@ d) It is always more optimal to pick up 3 risers rather than say pick up 2 and t
 
 For this solution, I implement what some call a greedy search. From the starting coordinate (36,66), the program looked for the shortest path to score using the following algorithm:
 
-Find the closest riser of a given color from the robot’s current location
-Find the closest riser of a given color from the first riser
-Find the closest riser of a given color from the second riser
-Find the closest zone which is either a) in a row with a stack of the same color or b) in a row without any stacks
-Record the distance needed to travel that path.
+* Find the closest riser of a given color from the robot’s current location
+* Find the closest riser of a given color from the first riser
+* Find the closest riser of a given color from the second riser
+* Find the closest zone which is either a) in a row with a stack of the same color or b) in a row without any stacks
+* Record the distance needed to travel that path.
 The program would then run through those steps for each riser color. Then chose the shortest path. Running the algorithm for each zone returns the following path (which is visualized nicely thanks to mathplotlib for python): which can be seen in visualization
 
 This path has a total distance of 1303 inches( see: ColoredScoring\Pathing\Output.txt).
